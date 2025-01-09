@@ -44,9 +44,11 @@ The goal of this project was to create a dynamic form that not only collects use
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Screenshot
+## Project Preview
 
-![Form Builder Screenshot](path-to-your-screenshot.png)
+![merged (2)](https://github.com/user-attachments/assets/6f12b1d8-ae4b-46f6-a5fb-56646433fc66)
+
+
 
 ## Functional Requirements
 
