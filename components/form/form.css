@@ -1,0 +1,92 @@
+.form-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+}
+
+.field-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  .input-group,
+  .select-group {
+    flex: 1;
+    position: relative;
+
+    .error-message {
+      color: #ff4d4f;
+      font-size: 0.875rem;
+      margin-top: 5px;
+    }
+  }
+
+  .delete-button {
+    color: #ff4d4f;
+    font-size: 0.875rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+
+  .add-button,
+  .submit-button {
+    padding: 10px 15px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: #005bb5;
+    }
+  }
+}
+
+.form-state-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+
+  th,
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    background-color: #f0f0f0;
+  }
+}
+
+.select-box {
+  display: flex;
+  flex-direction: column;
+
+  select {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .error-message {
+    color: red;
+    font-size: 12px;
+  }
+}
