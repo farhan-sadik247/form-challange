@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Form Builder Application
 
-## Getting Started
+## Description
 
-First, run the development server:
+This is a form builder application created as part of an assignment from 6sense Technologies. The project allows the dynamic creation of input fields and select boxes with validation, allowing users to input data and manage multiple entries. Each input field and select box is accompanied by validation, ensuring that no field is left empty before submission. The app displays the current state of the form in a table format, making it easy to track the values entered by the user.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Why I Built This Project
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The goal of this project was to create a dynamic form that not only collects user data but also includes validation and allows for the addition and removal of input fields and select boxes. The application showcases handling form states, managing dynamic form fields, and integrating proper error handling—all while working with a modern tech stack like React, TypeScript, and CSS.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technology Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Frontend**: React, Next.js, TypeScript
+- **Styling**: Tailwind CSS, Custom CSS
+- **UI Components**: ShadCN UI, React Icons
+- **State Management**: React Hook Form for handling form validation
+- **Form Validation**: React Hook Form with Zod
 
-## Learn More
+## How to Run the Project
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository:**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+    ```bash
+    git clone https://github.com/farhan-sadik247/form-challange.git
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+2. **Navigate into the project directory:**
 
-## Deploy on Vercel
+    ```bash
+    cd fc
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. **Install dependencies:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+    ```bash
+    npm install
+    ```
+
+4. **Run the development server:**
+
+    ```bash
+    npm run dev
+    ```
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Screenshot
+
+![Form Builder Screenshot](path-to-your-screenshot.png)
+
+## Functional Requirements
+
+The form builder application meets the following requirements:
+
+#### Form Creation:
+- A form with an input field and a select box, displayed side by side.
+
+#### Field Validation:
+- All fields are required. Error messages will be displayed below the input and select boxes if the form is submitted with empty fields.
+
+#### State Display:
+- The state of the form is displayed below the form using `<h3>` tags for easy visibility.
+
+#### Dynamic Field Addition:
+- A plus button (+ Add Field) that adds one input field and one select box to the form.
+
+#### OnChange Handling:
+- The `onChange` event of the input field and select box is handled, updating the state to store the current values entered.
+
+#### Field Deletion:
+- Each field pair (input field + select box) has a delete button. Clicking the button removes the corresponding input field and select box.
+
+#### Validation:
+- All fields are required, and if left empty, an error message will appear below the field after the form is submitted.
+
+#### Form State Table:
+- The state of the form is displayed in a table format below the form, listing all input values and their corresponding select values.
