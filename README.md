@@ -24,25 +24,20 @@ The goal of this project was to create a dynamic form that not only collects use
     git clone https://github.com/farhan-sadik247/form-challange.git
     ```
 
-2. **Navigate into the project directory:**
 
-    ```bash
-    cd fc
-    ```
-
-3. **Install dependencies:**
+2. **Install dependencies:**
 
     ```bash
     npm install
     ```
 
-4. **Run the development server:**
+3. **Run the development server:**
 
     ```bash
     npm run dev
     ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Project Preview
 
